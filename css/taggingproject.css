@@ -1,0 +1,20 @@
+.users_list {
+  max-height: 200px;
+}
+
+.tag_form_group {
+  position: relative;
+}
+
+.tag_form_group ul {
+  position: absolute;
+}
+
+.usersBox{
+    height: 100px;
+}
+
+.tagged_user{
+    color: rgba(0, 81, 255, 0.815);
+    font-weight: 600;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css//taggingproject.css" />
+    <title>User Tagging</title>
+  </head>
+  <body>
+    <div class="container p-3">
+      <h1 class="text-center mb-5">User Tagging</h1>
+
+      <div class="form-group mb-3 tag_form_group">
+        <label for="usersBox" class="mb-1">
+          Input box enter sentence here and @ to get name of the users to get
+          suggestion
+        </label>
+        <div
+          contenteditable="true"
+          spellcheck="false"
+          id="usersBox"
+          class="form-control usersBox"
+          placeholder="Write the sentence you want to.."
+        ></div>
+        <!-- Dropdown user list -->
+        <ul
+          class="list-group w-25 mt-1 overflow-auto users_list d-none"
+          role="button"
+          id="usersListDropdown"
+        ></ul>
+        <!-- Dropdown user list -->
+      </div>
+
+      <div class="tagged_users_cont mb-2">
+        <div class="d-flex justify-content-end mt-3">
+          <button class="btn btn-primary">Get tagged users</button>
+        </div>
+        <div class="taggedUsers"></div>
+      </div>
+
+      <div class="form-group mb-2">
+        <div id="availableUsers"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/taggingproject.js"></script>
+</html>
